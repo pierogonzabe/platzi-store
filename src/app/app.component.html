@@ -2,7 +2,7 @@
 {{title}}
 
 
-<app-product></app-product>
+
 
 <div *ngIf="title === 'piero' ">
   este es piero
@@ -29,7 +29,5 @@ Add item</button>
 </ul>
 
 <div *ngFor="let product of products">
-  {{ product.title}}
-  <img [src]="product.image" alt="">
-  {{product.price}}
+  <app-product (productClicked)="clickProduct($event)" [product]="product"></app-product>
 </div>
