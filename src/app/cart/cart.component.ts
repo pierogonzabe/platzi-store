@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cart.component.scss']
 })
 export class CartComponent implements OnInit {
-  item_list:string;
+  itemList:string;
   constructor() { }
 
   ngOnInit(): void {
