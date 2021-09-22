@@ -5,6 +5,9 @@
   este es un div
 </div>
 
+<button (click)="addItem()">
+Add item</button>
+
 <ul>
   <li *ngFor="let name of items; index as i">
     {{name}} {{ i}}
