@@ -1,9 +1,8 @@
 <input type="text" [(ngModel)]="title">
 {{title}}
 
-
-
-
+<input type="text" [(ngModel)]="power">
+{{power | exponential}}
 <div *ngIf="title === 'piero' ">
   este es piero
 </div>
