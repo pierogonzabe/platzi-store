@@ -11,6 +11,10 @@ export class AppComponent {
   items=['nicolas','julian','perez'];
 
   addItem(){
-    this.items.push('nuevo item')
+    this.items.push('nuevo item');
+  }
+
+  deleteItem(index:number){
+    this.items.splice(index,1);
   }
 }

@@ -9,7 +9,9 @@
 Add item</button>
 
 <ul>
+  <li *ngIf="items.length === 0"> la lista esta vacia</li>
   <li *ngFor="let name of items; index as i">
     {{name}} {{ i}}
+    <button (click)="deleteItem(i)">Delete item</button>
   </li>
 </ul>
